@@ -5,6 +5,7 @@ using UnityEngine;
 public class FXController : MonoBehaviour
 {
     [SerializeField] private FX fxPrefab, trailFX;
+    [SerializeField] private Color goalColor = Color.gray, perfectColor = Color.green, bounceColor = Color.blue;
 
     private GameObject trail;
     public enum FXType
@@ -15,6 +16,9 @@ public class FXController : MonoBehaviour
     }
     public void SpawnFX(Vector3 pos, float duration, int count, FXType type)
     {
+		// корректировка позиции по границам
+		pos.x = Mathf.Clamp(pos.x, -2.1f, 2.1f);
+		pos.y += 0.3f;
         var fx = Instantiate(fxPrefab, pos, Quaternion.identity);
         
         // FX settings
@@ -26,17 +30,17 @@ public class FXController : MonoBehaviour
         {
             case FXType.Bounce:
                 text = "BOUNCE!";
-                color = Color.blue;
+                color = bounceColor;
                 break;
             case FXType.Goal:
                 text = "+" + count;
-                color = Color.gray;
+                color = goalColor;
                 delayed = true;
                 break;
             case FXType.Perfect:
                 if(count > 1) text = "PERFECT! x" + count;
                 else text = "PERFECT!";
-                color = Color.green;
+                color = perfectColor;
                 break;
         }
 

@@ -614,7 +614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &270870363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2418,7 +2418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1014700177
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2562,7 +2562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1163296953
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4159,7 +4159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starPrefab: {fileID: -4466113487723980467, guid: e4c6c311042a98f41b80f51444590d19, type: 3}
-  randomFactor: 20
+  randomFactor: 70
   circlePrefab: {fileID: 4936244025361657871, guid: 9c79ce074edef6b4fa89c1d6846e4ebf, type: 3}
   offsetPositionsLeft:
   - {x: -1.6, y: 1.4, z: 0}
@@ -5114,6 +5114,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fxPrefab: {fileID: 3421576698701265803, guid: e19b1bdfe6de43b42ab1fc438aea49dc, type: 3}
   trailFX: {fileID: 3421576698701265803, guid: e19b1bdfe6de43b42ab1fc438aea49dc, type: 3}
+  goalColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+  perfectColor: {r: 0, g: 1, b: 0, a: 1}
+  bounceColor: {r: 0, g: 0.12941177, b: 1, a: 1}
 --- !u!4 &1964561283
 Transform:
   m_ObjectHideFlags: 0
@@ -5376,7 +5379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2063466031
 RectTransform:
   m_ObjectHideFlags: 0
